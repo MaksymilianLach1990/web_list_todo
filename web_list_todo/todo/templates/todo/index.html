@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
+    <link rel="stylesheet" href="{% static 'todo/css/index.css' %}">
 
 </head>
 <body>
-    <div class>
-        <div class="row"></div>
-    </div>
+    <header>
+        <h1>Tytuł strony</h1>
+    </header>
+    <br><hr><br>
+    <main>
+        <div>
+            <h2>Zawartość strony</h2>
+            <a href=""></a>
+        </div>
+    </main>
+    <br><hr><br>
+    <footer>
+        <h5>Stopka strony</h5>
+    </footer>
+
+    <script src="{% static 'todo/js/index.js' %}"></script>
 </body>
 </html>
