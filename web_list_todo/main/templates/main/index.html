@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Index{% endblock %}</title>
+    {% block link %}
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Title for all website</h1>
+        </div>
+    </header>
+    <main>
+        {% block main %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <h5>Coś tam na dole</h5>
+    </footer>
+
+    <script src="{% static 'main/js/index.js' %}"></script>
+    {% block scripts %}
+
+    {% endblock %}
+</body>
+</html>
