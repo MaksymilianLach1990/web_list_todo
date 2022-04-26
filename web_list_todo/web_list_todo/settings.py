@@ -78,11 +78,17 @@ WSGI_APPLICATION = 'web_list_todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'PhoenixMax90$storeHouse',
+        'USER' : 'PhoenixMax90',
+        'PASSWORD' : 'CrazyGirl93',
+        'HOS' : 'PhoenixMax90.mysql.pythonanywhere-services.com',
+        'OPTIONS' : {
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
-
+# Update database :)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
