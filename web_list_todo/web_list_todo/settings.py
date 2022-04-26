@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'todo.apps.TodoConfig',
     'users.apps.UsersConfig',
+    'crispy_forms',
+    'crispy_bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -78,16 +80,15 @@ WSGI_APPLICATION = 'web_list_todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'PhoenixMax90$storeHouse',
-        'USER' : 'PhoenixMax90',
-        'PASSWORD' : 'CrazyGirl93',
-        'HOS' : 'PhoenixMax90.mysql.pythonanywhere-services.com',
-        'OPTIONS' : {
-            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd3jrq2kf1propi',
+        'USER': 'wayavofellmxho',
+        'PASSWORD': 'b96ed0b3d485698c47e9eb695be0c18262a30a6ed3bcd7906b8ea08b9b073806',
+        'HOST': 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432'
     }
 }
+
 # Update database :)
 
 # Password validation
