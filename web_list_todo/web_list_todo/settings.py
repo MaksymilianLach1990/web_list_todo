@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     'crispy_bootstrap5'
 ]
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -59,7 +63,7 @@ ROOT_URLCONF = 'web_list_todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,10 +85,10 @@ WSGI_APPLICATION = 'web_list_todo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd3jrq2kf1propi',
-        'USER': 'wayavofellmxho',
-        'PASSWORD': 'b96ed0b3d485698c47e9eb695be0c18262a30a6ed3bcd7906b8ea08b9b073806',
-        'HOST': 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
+        'NAME': 'demcjunrpjg7c',
+        'USER': 'nmgrchtjqxcozd',
+        'PASSWORD': '58617113d2a20c1ee06cc248610f6169bc01b943d3764986d6a2303fd9631fb5',
+        'HOST': 'ec2-52-48-159-67.eu-west-1.compute.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -133,3 +137,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'home'
+
+LOGOUT_REDIRECT_URL = 'home'
